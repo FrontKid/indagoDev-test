@@ -1,0 +1,77 @@
+@import "../../scss/helpers/variables.scss";
+
+.pokemonList {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+
+  &__buttonContainer {
+    margin: 15px 0;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    color: $text-color;
+  }
+
+  &__description {
+    max-width: 335px;
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 73px;
+  }
+
+  &__list {
+    width: 300px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    overflow-y: scroll;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 432px;
+    padding-bottom: 10px;
+    background-color: $cardList;
+  }
+
+  &__listTitle {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__optionQuantity {
+    margin-bottom: 20px;
+  }
+
+  &__limitButton {
+    background-color: $buttonLimit !important;
+  }
+
+  &__listItem {
+    width: 100%;
+    padding: 8px 5px;
+    margin-bottom: 5px;
+    background-color: $itemBackground;
+    color: $text-color;
+    border-radius: 40px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+
+    &:hover {
+      background: #e9e4e0;
+    }
+
+    &:focus {
+      background-color: #e9e4e0;
+    }
+
+    button {
+      display: block;
+    }
+  }
+}
+
+.yellow {
+  background-color: $cardList !important;
+}

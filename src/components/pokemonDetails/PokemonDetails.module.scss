@@ -1,0 +1,68 @@
+@import "../../scss/helpers/variables.scss";
+
+.card {
+  background-color: $cardList;
+  padding: 17px 15px;
+  border-radius: 10px;
+
+  &__ImgBox {
+    display: flex;
+    column-gap: 10px;
+
+    div {
+      width: 136px;
+      height: 136px;
+      border-radius: 5px;
+      background-color: $text-color-alt;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    color: $text-color-hard;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  &__abilities {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin: 10px 0;
+    margin-bottom: 15px;
+
+    li:first-child {
+      color: $text-color;
+    }
+
+    li:not(:first-child) {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      color: $text-color-alt;
+      border-radius: 40px;
+      padding: 5px 10px;
+      background: #c15507;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__characteristics {
+    background-color: $cardBackground;
+    border-radius: 10px;
+    padding: 10px;
+    color: $text-color;
+
+    li:first-child {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    li {
+      text-transform: capitalize;
+    }
+  }
+}
